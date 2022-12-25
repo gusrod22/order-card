@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-image: url(images/pattern-background-desktop.svg); background-repeat: no-repeat;  background-position: center; background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.card {
+  background-color: white;
+  font-family: "Red Hat Display";
+  width: 330px;
+  height: 33.75rem;
+  border-radius: 20px;
+}
+.hero-img > svg{
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.main-content{
+    padding: 22px;
+}
+.main-content > *, .summary-txt > h1, .summary-txt > p, .plan-info, button{
+    margin-bottom: 1.25rem;
+}
+.summary-txt{
+    text-align: center;
+}
+.summary-txt p{
+  padding: 0 10px;
+}
+h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+#pcolor {
+  color: hsl(224, 23%, 55%);
+}
+.plan-info {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 15px;
+}
+.plan-info > img{
+    width: 45px;
+}
+.annual-price{
+  font-size: .85rem;
+  margin-right: 40px;
+}
+.annual-price > p{
+  color: hsl(224, 23%, 55%);
+}
+#annual-heading {
+  font-weight: 900;
+}
+#change-link{
+  font-size: .9rem;
+  font-weight: 700;
+}
+.confirm-order{
+    display: flex;
+    flex-direction: column;
+}
+#proceed-btn {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  max-width: 100%;
+  padding: 12px;
+  box-shadow: 0 10px 15px -10px hsl(245, 75%, 52%);
+}
+#cancel-btn{
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);;
+}
+
+@media screen and (min-width: 60rem) {
+  body{
+    background-image: url(images/pattern-background-desktop.svg); background-repeat: no-repeat;  background-position: center; background-size: cover;
+  }
+  .main-content > *, .summary-txt > h1, .summary-txt > p, .plan-info, button{
+    margin-bottom: 1.5rem;
+}
+  .card{
+    height: 650px;
+    width: 450px;
+  }
+  .main-content{
+    padding: 40px;
+  }
+  h1{
+    font-size: 1.4rem;
+  }
+  .plan-info > img{
+    width: 50px;
+    margin-left: 15px;
+}
+  .annual-price{
+    font-size: 1rem;
+    margin-right: 70px;
+  }
+  #change-link{
+    margin-right: 10px;
+  }
+}
